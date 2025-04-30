@@ -165,4 +165,37 @@ Politiques Row Level Security (RLS) appliquées dans Supabase:
 5. Connexion automatique à la session Jitsi correspondante
 6. Actualisation en temps réel via Supabase Realtime
 
+## Fichiers de configuration
+
+### Racine du projet
+
+| Fichier | Description |
+|---------|-------------|
+| `next.config.js` | Configuration de Next.js |
+| `.eslintrc.json` | Configuration ESLint avec intégration Prettier |
+| `.prettierrc` | Règles de formatage du code (tabWidth: 2, singleQuote: true, etc.) |
+| `.prettierignore` | Fichiers ignorés par Prettier |
+| `commitlint.config.js` | Règles pour les messages de commit conventionnels |
+| `package.json` | Dépendances et scripts npm |
+| `tsconfig.json` | Configuration TypeScript |
+
+### Hooks Git (Husky)
+
+| Fichier | Description |
+|---------|-------------|
+| `.husky/pre-commit` | Exécute lint-staged avant chaque commit |
+| `.husky/commit-msg` | Vérifie le format des messages de commit |
+
+### Structure de l'application
+
+Pour le moment, l'application suit la structure standard de Next.js avec App Router:
+
+```
+src/
+├── app/             # Routes Next.js App Router
+│   ├── layout.tsx   # Layout principal avec polices (Inter, Roboto_Mono)
+│   ├── page.tsx     # Page d'accueil
+│   └── globals.css  # Styles globaux (Tailwind)
+```
+
 ---
