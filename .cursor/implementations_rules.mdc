@@ -1,0 +1,21 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: MV Implementation
+globs: 
+alwaysApply: true
+---
+
+- Always use i18n keys when adding any user-facing text, following the structure in memory-bank/@architecture.md.
+- When modifying Supabase queries, remind me to check RLS policies as defined in memory-bank/@architecture.md.
+- Always update memory-bank/progress.md to add progression, things already done
+- Follow the implementation phases as outlined in memory-bank/implementation-plan.md
+- Write tests for each feature as specified in the implementation plan
+- Prioritize critical MVP features over nice-to-have enhancements
+- Always verify that your implementation passes the test criteria for each step
+- When completing an implementation phase, mark it as complete in the checklist
+  
+[implementation-plan.md](mdc:memory-bank/implementation-plan.md)

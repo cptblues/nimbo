@@ -1,0 +1,18 @@
+---
+description: 
+globs: **/i18n/**,**.tsx
+alwaysApply: false
+---
+---
+description: Standards d'internationalisation Nimbo
+globs: **/i18n/**,**.tsx
+alwaysApply: true
+---
+
+- Structure translations in namespaces (common, auth, rooms, etc.)
+- Default language is French, prepare structure for English support
+- Never hardcode user-facing text, always use translation keys
+- Format all dates, numbers and currencies according to locale
+- Ensure RTL language support in layout design
+
+[implementation-plan.md](mdc:memory-bank/implementation-plan.md)

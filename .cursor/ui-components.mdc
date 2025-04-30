@@ -1,0 +1,19 @@
+---
+description: 
+globs: **/components/**
+alwaysApply: false
+---
+---
+description: Principes UX/UI Nimbo
+globs: **/components/**
+alwaysApply: true
+---
+
+- Design according to the principles in memory-bank/@game-design-document.md
+- Maintain spatial metaphor in navigation and interaction design
+- Implement status indicators consistently across the application
+- Ensure smooth transitions between rooms and spaces
+- Adhere to the accessibility standards defined in the project
+- Support both light and dark mode themes
+
+[game-design-document.md](mdc:memory-bank/game-design-document.md)

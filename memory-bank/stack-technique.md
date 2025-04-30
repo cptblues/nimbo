@@ -28,7 +28,6 @@ Ce document détaille la stack technique recommandée pour le développement de 
 | Technologie | Usage |
 |-------------|-------|
 | **Jitsi Meet API** | Solution open-source pour les visioconférences |
-| **mediasoup** (alternative) | Option alternative pour plus de contrôle sur l'expérience WebRTC |
 
 ## 🔌 Intégrations et Fonctionnalités
 
@@ -118,5 +117,3 @@ src/
 - PWA pour l'installation sur appareils mobiles
 
 ---
-
-*Ce document est destiné à être utilisé avec Cursor.ai pour faciliter le développement du projet d'espace de coworking virtuel.*

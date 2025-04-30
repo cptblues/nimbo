@@ -1,0 +1,19 @@
+---
+description: 
+globs: **/supabase/**,**/db/**,**/api/**
+alwaysApply: false
+---
+---
+description: Standards Supabase et base de données Nimbo
+globs: **/supabase/**,**/db/**,**/api/**
+alwaysApply: true
+---
+
+- Follow the database schema defined in memory-bank/@architecture.md
+- Implement proper RLS policies for all database operations
+- Use edge functions for serverless backend logic
+- Configure Supabase Realtime for presence features
+- Implement automatic reconnection for Realtime features
+- Always validate data on both client and server side
+
+[architecture.md](mdc:memory-bank/architecture.md)

@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Architecture technique et principes de conception Nimbo
+globs: 
+alwaysApply: true
+---
+
+- Always read memory-bank/@architecture.md before writing any code. Include entire database schema.
+- Always read memory-bank/@game-design-document.md before writing any code.
+- Always read memory-bank/progress.md before writing any code to be aware of things done.
+- After adding a major feature or completing a milestone, update memory-bank/@architecture.md.
+- Auto Attach memory-bank/@architecture.md memory-bank/@game-design-document.md to all conversations.
+- Always remind me of the database schema from memory-bank/@architecture.md when I'm working with database models or queries.
+- Agent Requested "Does this implementation align with the design principles in memory-bank/@game-design-document.md?" when code changes affect the user experience.
+
+[architecture.md](mdc:memory-bank/architecture.md) [game-design-document.md](mdc:memory-bank/game-design-document.md)
