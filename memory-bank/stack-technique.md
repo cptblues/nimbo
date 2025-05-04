@@ -6,12 +6,12 @@ Ce document détaille la stack technique recommandée pour le développement de 
 
 | Technologie | Version | Usage |
 |-------------|---------|-------|
-| **Next.js** | 14+ | Framework React avec rendu hybride (SSR/SSG/CSR) |
+| **Next.js** | 15.x | Framework React avec App Router, Partial Prerendering et optimisations |
 | **TypeScript** | 5.x | Typage statique pour une meilleure maintenabilité |
 | **shadcn/ui** | Latest | Composants UI personnalisables et accessibles |
-| **TailwindCSS** | 3.x | Framework CSS utilitaire pour le styling |
+| **TailwindCSS** | 4.x | Framework CSS utilitaire pour le styling |
 | **React Query / TanStack Query** | 5.x | Gestion optimisée des requêtes et de la mise en cache |
-| **Zustand** | 4.x | Gestion d'état légère et performante |
+| **Zustand** | 5.x | Gestion d'état légère et performante |
 | **Framer Motion** | 10.x | Animations fluides et professionnelles |
 
 ## 🧠 Backend et Infrastructure
@@ -47,6 +47,48 @@ Ce document détaille la stack technique recommandée pour le développement de 
 | **PWA** | Progressive Web App pour utilisation mobile et desktop |
 | **Module bundlers optimisés** | Via Next.js pour de meilleures performances |
 | **Supabase Storage** | Stockage de médias et de documents |
+| **Partial Prerendering** | Nouvelle fonctionnalité Next.js 15 pour un chargement hybride statique/dynamique |
+| **Optimisations d'images** | Support avancé de WebP et AVIF via Next.js 15 |
+| **Optimisations CSS** | TailwindCSS 4 avec meilleures performances |
+
+## 🔧 Configuration Next.js 15
+
+L'application utilise des fonctionnalités avancées de Next.js 15:
+
+```js
+// next.config.js
+const nextConfig = {
+  // Optimisations des polices
+  optimizeFonts: true,
+  
+  // Partial Prerendering (feature expérimentale)
+  experimental: {
+    // ppr: true, // À activer en production
+    webpackBuildWorker: true,
+  },
+  
+  // Optimisations d'images
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
+  
+  // Headers de sécurité
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-Frame-Options', value: 'DENY' },
+          { key: 'X-XSS-Protection', value: '1; mode=block' },
+        ],
+      },
+    ];
+  },
+};
+```
+
+**Note importante**: Next.js 15 requiert Node.js 18.18.0 ou plus récent.
 
 ## 🏗️ Architecture
 

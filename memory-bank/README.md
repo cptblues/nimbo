@@ -29,4 +29,4 @@ Ces documents doivent être consultés et tenus à jour tout au long du cycle de
 
 ---
 
-*La documentation de ce dossier est essentielle pour maintenir la cohérence et la qualité du projet Nimbo.* 
+Now go through all files in the memory-bank, read progress.md to understand prior work, and proceed with Step 1.4. Do not start Step 1.5 until I validate the test

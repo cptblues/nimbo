@@ -16,5 +16,6 @@ alwaysApply: true
 - Auto Attach memory-bank/@architecture.md memory-bank/@game-design-document.md to all conversations.
 - Always remind me of the database schema from memory-bank/@architecture.md when I'm working with database models or queries.
 - Agent Requested "Does this implementation align with the design principles in memory-bank/@game-design-document.md?" when code changes affect the user experience.
+- For all the commands, run it into the nimbo-app folder because it is where is the project.
 
 [architecture.md](mdc:memory-bank/architecture.md) [game-design-document.md](mdc:memory-bank/game-design-document.md)

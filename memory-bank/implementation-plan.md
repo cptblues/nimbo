@@ -36,21 +36,7 @@ Ce document détaille le plan d'implémentation étape par étape pour développ
 - Configurer les politiques RLS (Row Level Security)
 - **Test**: Vérifier les contraintes et relations via des requêtes SQL
 
-### Étape 1.6: Internationalisation
-- Installer et configurer next-intl ou next-i18next
-- Créer les fichiers de traduction pour le français (défaut)
-- Structurer les traductions par namespaces (common, auth, rooms, etc.)
-- Préparer la structure pour permettre l'ajout futur d'autres langues
-- **Test**: Vérifier le chargement des traductions françaises
-
 ## Phase 2: Authentification & Structure
-
-### Étape 2.1: Système d'authentification
-- Configurer l'authentification Supabase avec Google OAuth
-- Créer les pages de login/signup
-- Mettre en place le middleware d'authentification
-- Créer le hook `useAuth` pour la gestion de session
-- **Test**: Vérifier l'inscription et connexion via Google
 
 ### Étape 2.2: Layout principal
 - Créer la structure de navigation principale
